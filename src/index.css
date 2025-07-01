@@ -6,72 +6,88 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #27a776;
-    --secondary-color: #7a7a7a;
+  --primary-color: #27a776;
+  --secondary-color: #7a7a7a;
 }
 
 .font-secondary {
-    font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.text-secondary {
+  color: var(--secondary-color);
 }
 
 .font-hero {
-    font-family: "Michroma", sans-serif !important;
+  font-family: 'Michroma', sans-serif !important;
 }
 
 .hero-bg {
-    @apply relative w-full h-screen overflow-x-hidden flex items-center;
-    background-image: url(/my-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+  @apply relative w-full h-screen overflow-x-hidden flex items-center;
+  background-image: url(/my-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-bg::after {
-    content: "";
-    @apply absolute w-full h-full left-0 top-0 bg-black;
-    opacity: 0.8;
+  content: '';
+  @apply absolute w-full h-full left-0 top-0 bg-black;
+  opacity: 0.8;
 }
 
 .nav-link li {
-    position: relative;
-    transition: .2s all linear;
-    font-family: "Roboto Mono", monospace;
-    color: #7a7a7a;
+  position: relative;
+  transition: 0.2s all linear;
+  font-family: 'Roboto Mono', monospace;
+  color: #7a7a7a;
 }
 
 .nav-link li::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background-color: #27a776;
-    bottom: -2px;
-    right: 0;
-    transition: .3s all ease-in-out;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #27a776;
+  bottom: -2px;
+  right: 0;
+  transition: 0.3s all ease-in-out;
 }
 
 .nav-link li:hover::after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 .nav-link li:hover {
-    color: white;
+  color: white;
 }
 
 .social-links li a {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #242323;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s all linear;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #242323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all linear;
 }
 
 .social-links li a:hover {
-    background-color: var(--primary-color);
-    color: white;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* header */
+
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  @apply sticky top-0;
+}
+
+.logo img {
+  filter: invert(1);
+  opacity: 0.5;
 }

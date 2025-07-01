@@ -29,22 +29,22 @@ const Home = () => {
                     </div>
                     <ul className="text-[#7a7a7a] capitalize  md:flex hidden justify-end gap-14 font-semibold nav-link mb-7">
                         <li>
-                            <Link to={"./"}>home</Link>
+                            <Link to={"/"}>home</Link>
                         </li>
                         <li>
-                            <Link>about</Link>
+                            <Link to={"/about"}>about</Link>
                         </li>
                         <li>
-                            <Link>resume</Link>
+                            <Link to={"/resume"}>resume</Link>
                         </li>
                         <li>
-                            <Link>projects</Link>
+                            <Link to={"/projects"}>projects</Link>
                         </li>
                         <li>
-                            <Link>blogs</Link>
+                            <Link to={"/blogs"}>blogs</Link>
                         </li>
                         <li>
-                            <Link>contact</Link>
+                            <Link to={"/contact"}>contact</Link>
                         </li>
                     </ul>
                     {/* mobile navs toggle button */}

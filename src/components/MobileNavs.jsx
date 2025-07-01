@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Drawer } from "flowbite-react";
 import { Link } from "react-router-dom";
 import ShinyText from "../components/glowingText/ShinyText ";
