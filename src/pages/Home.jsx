@@ -18,7 +18,7 @@ const Home = () => {
                 <ParticlesBackground />
             </div>
             <div className="container mx-auto">
-                <div className="relative z-20">
+                <div className="relative z-20 xl:pe-4">
                     <h5 className="uppercase font-hero md:text-end text-center text-[40px]">
                         <ShinyText text="kaushal varma" speed={3} />
                     </h5>
@@ -28,9 +28,6 @@ const Home = () => {
                         </span> from Surat
                     </div>
                     <ul className="text-[#7a7a7a] capitalize  md:flex hidden justify-end gap-14 font-semibold nav-link mb-7">
-                        <li>
-                            <Link to={"/"}>home</Link>
-                        </li>
                         <li>
                             <Link to={"/about"}>about</Link>
                         </li>

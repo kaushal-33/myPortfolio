@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import MobileNavs from './MobileNavs'
 import { useState } from 'react'
@@ -6,32 +6,32 @@ import { HiOutlineBarsArrowUp } from 'react-icons/hi2'
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-
+  const { pathname } = useLocation();
   return (
     <header className='header'>
       <div className='container mx-auto'>
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center xl:pe-4'>
           <div className='logo'>
             <img src='/logoSVG.svg' alt='MY LOGO' width={100} />
           </div>
           <ul className='text-[#7a7a7a] capitalize  lg:flex hidden justify-end gap-14 font-semibold nav-link'>
             <li>
-              <Link to={'/'}>home</Link>
+              <Link className={`${pathname == "/" && "active-nav"}`} to={'/'}>home</Link>
             </li>
             <li>
-              <Link to={'/about'}>about</Link>
+              <Link className={`${pathname =="/about" && "active-nav"}`} to={'/about'}>about</Link>
             </li>
             <li>
-              <Link to={'/resume'}>resume</Link>
+              <Link className={`${pathname =="/resume" && "active-nav"}`} to={'/resume'}>resume</Link>
             </li>
             <li>
-              <Link to={'/projects'}>projects</Link>
+              <Link className={`${pathname =="/projects" && "active-nav"}`} to={'/projects'}>projects</Link>
             </li>
             <li>
-              <Link to={'/blogs'}>blogs</Link>
+              <Link className={`${pathname =="/blogs" && "active-nav"}`} to={'/blogs'}>blogs</Link>
             </li>
             <li>
-              <Link to={'/contact'}>contact</Link>
+              <Link className={`${pathname =="/contact" && "active-nav"}`} to={'/contact'}>contact</Link>
             </li>
           </ul>
           <ul className='flex items-center text-[#7a7a7a] gap-3 text-2xl'>

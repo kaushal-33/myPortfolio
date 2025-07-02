@@ -1,10 +1,11 @@
 import { Drawer } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ShinyText from "../components/glowingText/ShinyText ";
 import { IoCloseOutline } from "react-icons/io5";
 
 const MobileNavs = ({ isOpen, setIsOpen }) => {
 
+    const { pathname } = useLocation();
 
     return (
         <Drawer open={isOpen} onClose={setIsOpen} position="top">
@@ -19,22 +20,22 @@ const MobileNavs = ({ isOpen, setIsOpen }) => {
                 </div>
                 <ul className="text-[#7a7a7a] capitalize font-semibold nav-link mt-5">
                     <li className="mb-3">
-                        <Link to={"/"} onClick={() => setIsOpen(false)}>home</Link>
+                        <Link className={`block ${pathname == "/home" && "active-nav"}`} to={"/"} onClick={() => setIsOpen(false)}>home</Link>
                     </li>
                     <li className="mb-3">
-                        <Link onClick={() => setIsOpen(false)}>about</Link>
+                        <Link className={`block ${pathname == "/about" && "active-nav"}`} to={"/about"} onClick={() => setIsOpen(false)}>about</Link>
                     </li>
                     <li className="mb-3">
-                        <Link onClick={() => setIsOpen(false)}>resume</Link>
+                        <Link className={`block ${pathname == "/resume" && "active-nav"}`} to={"/resume"} onClick={() => setIsOpen(false)}>resume</Link>
                     </li>
                     <li className="mb-3">
-                        <Link onClick={() => setIsOpen(false)}>projects</Link>
+                        <Link className={`block ${pathname == "/projects" && "active-nav"}`} to={"/projects"} onClick={() => setIsOpen(false)}>projects</Link>
                     </li>
                     <li className="mb-3">
-                        <Link onClick={() => setIsOpen(false)}>blogs</Link>
+                        <Link className={`block ${pathname == "/blogs" && "active-nav"}`} to={"/blogs"} onClick={() => setIsOpen(false)}>blogs</Link>
                     </li>
                     <li className="">
-                        <Link onClick={() => setIsOpen(false)}>contact</Link>
+                        <Link className={`block ${pathname == "/contact" && "active-nav"}`} to={"/contact"} onClick={() => setIsOpen(false)}>contact</Link>
                     </li>
                 </ul>
             </div>

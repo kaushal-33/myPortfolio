@@ -63,6 +63,12 @@
   color: white;
 }
 
+.active-nav {
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
 .social-links li a {
   width: 50px;
   height: 50px;
