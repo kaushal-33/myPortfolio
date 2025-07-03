@@ -1,8 +1,11 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Button from '../components/Button'
 import Header from '../components/Header'
 import RotatingText from '../components/rotatingText/RotatingText'
 import Title from '../components/Title'
 import { IoIosArrowForward } from "react-icons/io";
+import 'swiper/css';
+
 
 const About = () => {
   return (
@@ -110,6 +113,23 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='mt-12'>
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={""}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div>
+              https://github.com/emmabostian/developer-portfolios?tab=readme-ov-file
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   )
