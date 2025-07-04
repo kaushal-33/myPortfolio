@@ -8,6 +8,7 @@ import MobileNavs from "../components/MobileNavs";
 
 
 
+
 const Home = () => {
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);

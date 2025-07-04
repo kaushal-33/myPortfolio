@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Button from '../components/Button'
 import Header from '../components/Header'
 import RotatingText from '../components/rotatingText/RotatingText'
@@ -9,7 +10,7 @@ import 'swiper/css';
 
 const About = () => {
   return (
-    <section className='bg-black pb-10 text-secondary'>
+    <section className='bg-black text-secondary pb-10'>
       <Header />
       <div className='container mx-auto'>
         <div className='px-4'>
@@ -112,24 +113,88 @@ const About = () => {
               </div>
             </div>
           </div>
+          <h3 className='mt-10 font-hero text-2xl capitalize text-center'>my skills</h3>
+          <div className='mt-10 flex justify-center'>
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={0}
+              loop={true}
+              freeMode={true}
+              speed={5000}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                992: {
+                  slidesPerView: 3
+                },
+                1024: {
+                  slidesPerView: 6
+                },
+              }}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\html.png" alt="HTML Logo" width={50} />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\css.png" alt="HTML Logo" width={70} />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\jQuery.png" alt="HTML Logo" className='invert' width={70} />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\bootsrap.png" alt="HTML Logo" width={60} />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\javascript.png" alt="HTML Logo" width={60} />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\react.png" alt="HTML Logo" width={60} />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\vite.png" alt="HTML Logo" width={50} />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='flex justify-center'>
+                  <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <img src="\technologiesLogos\redux.png" alt="HTML Logo" width={50} />
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
-      </div>
-      <div className='mt-12'>
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={""}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div>
-              https://github.com/emmabostian/developer-portfolios?tab=readme-ov-file
-            </div>
-          </SwiperSlide>
-        </Swiper>
       </div>
     </section>
   )

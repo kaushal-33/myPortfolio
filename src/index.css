@@ -119,3 +119,15 @@
   filter: invert(1);
   opacity: 0.5;
 }
+
+.tech-logo {
+  position: relative;
+}
+
+.tech-logo::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px dashed var(--primary-color);
+  right: -125px;
+}
