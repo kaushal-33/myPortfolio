@@ -20,7 +20,7 @@ const MobileNavs = ({ isOpen, setIsOpen }) => {
                 </div>
                 <ul className="text-[#7a7a7a] capitalize font-semibold nav-link mt-5">
                     <li className="mb-3">
-                        <Link className={`block ${pathname == "/home" && "active-nav"}`} to={"/"} onClick={() => setIsOpen(false)}>home</Link>
+                        <Link className={`block ${pathname == "/" && "active-nav"}`} to={"/"} onClick={() => setIsOpen(false)}>home</Link>
                     </li>
                     <li className="mb-3">
                         <Link className={`block ${pathname == "/about" && "active-nav"}`} to={"/about"} onClick={() => setIsOpen(false)}>about</Link>

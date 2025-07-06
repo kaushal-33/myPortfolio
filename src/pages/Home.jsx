@@ -51,7 +51,9 @@ const Home = () => {
                             <HiOutlineBarsArrowUp />
                         </button>
                     </div>
-                    <SocialLinks />
+                    <ul className="flex-wrap flex md:justify-end justify-center text-[#7a7a7a] gap-3 text-2xl social-links">
+                        <SocialLinks />
+                    </ul>
                 </div>
             </div>
             {/* mobile navs */}
