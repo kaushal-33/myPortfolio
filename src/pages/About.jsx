@@ -191,7 +191,7 @@ const About = () => {
               </Swiper>
             </div>
 
-            <h6 className='font-hero uppercase mt-16 text-center'>testimonials</h6>
+            <h6 className='font-hero uppercase mt-16 text-2xl text-center'>testimonials</h6>
             <h3 className='text-4xl mb-14 text-center'>What they are saying</h3>
             {/* testimonials */}
             <div className='flex justify-center'>
