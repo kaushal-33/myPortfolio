@@ -86,7 +86,7 @@ const ChromaGrid = ({
                     key={i}
                     onMouseMove={handleCardMove}
                     onClick={() => handleCardClick(c.url)}
-                    className="relative w-3/12 overflow-hidden rounded-md border-2 border-transparent transition-colors duration-300 cursor-pointer"
+                    className="relative md:w-5/12 xl:w-3/12  overflow-hidden rounded-md border-2 border-transparent transition-colors duration-300 cursor-pointer"
                     style={
                         {
                             "--card-border": c.borderColor || "transparent",
@@ -102,7 +102,7 @@ const ChromaGrid = ({
                                 "radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)",
                         }}
                     />
-                    <div className="relative z-10 flex-1 h-[200px] p-[15px] box-border">
+                    <div className="relative z-10 flex-1 md:h-[200px] p-[15px] box-border">
                         <img
                             src={c.image}
                             alt={c.title}
