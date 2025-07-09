@@ -115,6 +115,8 @@
   @apply sticky top-0;
 }
 
+
+/* about section */
 .logo img {
   filter: invert(1);
   opacity: 0.5;
@@ -139,6 +141,47 @@
   margin-inline: 5px;
 }
 
-.item{
-  /* margin-bottom: 10px; */
+.card {
+  background: linear-gradient(rgb(16, 185, 129), rgb(0, 0, 0));
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.5s ease-in-out;
+  border-color: var(--primary-color);
+}
+
+.card:hover {
+  background-position: top;
+}
+
+/* resume section */
+
+.resume-section {
+  background-image: url(../public/my-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.glass {
+  background: rgba(14, 14, 14, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.685);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid #27a77664;
+}
+
+.dot {
+  position: relative;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  top: 0;
+  left: -8px;
 }

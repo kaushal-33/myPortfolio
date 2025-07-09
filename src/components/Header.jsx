@@ -3,6 +3,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import MobileNavs from './MobileNavs'
 import { useState } from 'react'
 import { HiOutlineBarsArrowUp } from 'react-icons/hi2'
+import { SiHackerrank } from 'react-icons/si'
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -51,6 +52,15 @@ const Header = () => {
                 target='_blank'
               >
                 <BsLinkedin />
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://www.hackerrank.com/profile/varmakaushal33'
+                className='fs-4 text-secondary d-inline-block hover:text-white transition-all'
+                target='_blank'
+              >
+                <SiHackerrank />
               </a>
             </li>
             <li className='lg:hidden'>

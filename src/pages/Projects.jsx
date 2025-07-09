@@ -160,17 +160,16 @@ const Projects = () => {
                                     {filteredProjects.map((item) => (
                                         <motion.div
                                             key={item.title}
-                                            className={`w-full sm:w-[100%] md:w-[47%] lg:w-[30%] max-w-sm rounded-2xl border p-5 shadow-xl bg-[#111]`}
-                                            style={{
-                                                borderColor: item.borderColor,
-                                                background: item.gradient,
-                                            }}
+                                            className={`w-full card sm:w-[100%] md:w-[47%] lg:w-[30%] max-w-sm rounded-2xl border p-5 shadow-xl bg-[#111]`}
+                                            // style={{
+                                            //     borderColor: item.borderColor,
+                                            //     background: item.gradient,
+                                            // }}
                                             layout
                                             initial={{ opacity: 0, y: 20 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0, y: -20 }}
                                             transition={{ duration: 0.4, ease: "easeInOut" }}
-                                            whileHover={{ y: -5 }}
                                         >
                                             <a
                                                 href={item.url}
