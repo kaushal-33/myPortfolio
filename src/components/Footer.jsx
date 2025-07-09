@@ -7,9 +7,9 @@ const Footer = () => {
         <footer className="relative overflow-x-hidden">
             <div className="container mx-auto">
                 <div className="px-4 pb-8 text-[#7a7a7a] relative z-10">
-                    <ul className="text-2xl flex justify-center gap-3 mb-3">
+                    {/* <ul className="text-2xl pb-8 border-b border-[#7a7a7a] flex justify-center gap-3 mb-3">
                         <SocialLinks />
-                    </ul>
+                    </ul> */}
                     <div className="flex items-center justify-center">
                         <span>© Copyright</span>
                         <div className='logo'>

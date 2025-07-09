@@ -132,9 +132,13 @@
   right: -125px;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
   background-color: var(--primary-color) !important;
   margin-inline: 5px;
+}
+
+.item{
+  /* margin-bottom: 10px; */
 }
