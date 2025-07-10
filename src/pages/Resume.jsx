@@ -71,6 +71,24 @@ const Resume = () => {
                                                 </ul>
                                             </div>
                                         </div>
+                                        <h6 className="text-center capitalize text-2xl font-bold my-5">other</h6>
+                                        <div>
+                                            <h5 className="text-[#27a776] font-bold ps-4 uppercase">
+                                                skills
+                                            </h5>
+                                            <div className="px-4 border-s border-[#7a7a7a] dot -mt-5 pt-9">
+                                                <ul className="list-disc ps-4">
+                                                    <li className="capitalize">problem solving</li>
+                                                    <li className="capitalize">canva</li>
+                                                    <li className="capitalize">accounting</li>
+                                                    <li className="capitalize">MS office</li>
+                                                    <li className="capitalize">Communication</li>
+                                                    <li className="capitalize">Time Management</li>
+                                                    <li className="capitalize">Teamwork</li>
+                                                    <li className="capitalize">Stock Trading</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="lg:w-6/12">
@@ -166,24 +184,6 @@ const Resume = () => {
                                                 <p>
                                                     Achiever's Point is an educational institution that offers enhanced tuition and other study-related advice to students preparing for better careers in the classroom and beyond.
                                                 </p>
-                                            </div>
-                                        </div>
-                                        <h6 className="text-center capitalize text-2xl font-bold my-5">other</h6>
-                                        <div>
-                                            <h5 className="text-[#27a776] font-bold ps-4 uppercase">
-                                                skills
-                                            </h5>
-                                            <div className="px-4 border-s border-[#7a7a7a] dot -mt-5 pt-9">
-                                                <ul className="list-disc ps-4">
-                                                    <li className="capitalize">problem solving</li>
-                                                    <li className="capitalize">canva</li>
-                                                    <li className="capitalize">accounting</li>
-                                                    <li className="capitalize">MS office</li>
-                                                    <li className="capitalize">Communication</li>
-                                                    <li className="capitalize">Time Management</li>
-                                                    <li className="capitalize">Teamwork</li>
-                                                    <li className="capitalize">Stock Trading</li>
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>
