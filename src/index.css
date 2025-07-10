@@ -160,18 +160,16 @@
 /* resume section */
 
 .resume-section {
-  background-image: url(../public/my-bg.jpg);
+  background-image: url(/my-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-attachment: fixed;
 }
 
 .glass {
-  background: rgba(14, 14, 14, 0.9);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.685);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.9);
   border: 1px solid #27a77664;
 }
 

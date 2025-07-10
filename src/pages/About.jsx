@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import Button from '../components/Button'
@@ -9,9 +10,21 @@ import 'swiper/css';
 import { LiaStarSolid } from 'react-icons/lia';
 import 'swiper/css/pagination';
 import Footer from '../components/Footer';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const About = () => {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // animation duration
+      once: true,      // animation only once
+      offset: 120,     // trigger point
+    });
+  }, []);
 
   const skillsLogo = [
     { logo: "/technologiesLogos/html.png", size: 50 },
@@ -58,10 +71,10 @@ const About = () => {
       <section className='bg-black text-secondary py-16'>
         <div className='container mx-auto'>
           <div className='px-4'>
-            <div>
+            <div data-aos="fade-up">
               <Title title={'about'} />
             </div>
-            <p className='mt-5 md:w-6/12 text-center mx-auto text-lg'>
+            <p className='mt-5 md:w-6/12 text-center mx-auto text-lg' data-aos="fade-down">
               I am a results-oriented Fullstack Developer with 1 years of
               expertise developing reliable websites. Possessing a solid
               background in front-end and back-end programming, I thrive at
@@ -71,18 +84,18 @@ const About = () => {
               frameworks and technologies in order to improve user experience and
               project efficiency.
             </p>
-            <div className='text-center mt-7'>
-              <Button name={'AVAILABLE FOR HIRE'} />
+            <div className='mt-7 w-[240px] h-[50px] m-auto' data-aos="flip-up">
+              <Button name={'AVAILABLE FOR HIRE'} onClick={() => navigate("/contact")} />
             </div>
             <div className='flex flex-wrap gap-7 lg:justify-center justify-start xl:items-center mt-16'>
-              <div className='md:w-4/12 lg:order-1 order-2'>
+              <div className='md:w-4/12 lg:order-1 order-2' data-aos="flip-right">
                 <div className='h-full'>
                   <div className='text-center overflow-hidden rounded-lg h-full'>
                     <img src="/me-2.jpg" alt="My picture" width="100%" className='object-cover h-full' />
                   </div>
                 </div>
               </div>
-              <div className='lg:w-6/12 lg:order-2 order-1'>
+              <div className='lg:w-6/12 lg:order-2 order-1' data-aos="flip-left">
                 <div className=''>
                   <h3 className='uppercase text-3xl font-secondary'>
                     professional <RotatingText

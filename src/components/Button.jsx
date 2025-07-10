@@ -1,8 +1,8 @@
 import GlareHover from './glareHover/GlareHover'
 
-const Button = ({ name }) => {
+const Button = ({ name, onClick }) => {
   return (
-    <button className='w-[240px] h-[50px]'>
+    <button className='w-full h-full' onClick={onClick}>
       <GlareHover
         glareColor='#ffffff'
         glareOpacity={0.3}

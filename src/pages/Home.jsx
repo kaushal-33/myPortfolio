@@ -1,17 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ShinyText from "../components/glowingText/ShinyText ";
 import ParticlesBackground from "../components/tsParticles/ParticlesBackground";
 import SocialLinks from "../components/SocialLinks";
 import { HiOutlineBarsArrowUp } from "react-icons/hi2";
 import MobileNavs from "../components/MobileNavs";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const Home = () => {
-
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,  // animation duration
+            once: true,      // animation only once
+            offset: 120,     // trigger point
+        });
+    }, []);
+
 
     return (
         <section className="hero-bg">
@@ -20,11 +29,11 @@ const Home = () => {
             </div>
             <div className="container mx-auto">
                 <div className="relative z-20 xl:pe-4">
-                    <h5 className="uppercase font-hero md:text-end text-center text-[40px]">
+                    <h5 className="uppercase font-hero md:text-end text-center text-[40px]" data-aos="fade-down">
                         <ShinyText text="kaushal varma" speed={3} />
                     </h5>
-                    <div className="text-[#7a7a7a] font-secondary md:text-end text-center text-3xl mb-9">
-                        I'm a passionate <span className="uppercase inline-block border-b border-[#27a776] pb-1 text-sm font-hero">
+                    <div className="text-[#7a7a7a] font-secondary md:text-end text-center text-3xl mb-9"> 
+                        I'm a passionate <span className="uppercase inline-block border-b border-[#27a776] pb-1 text-sm font-hero" data-aos="fade-down">
                             <ShinyText text="fullstack developer" speed={3} />
                         </span> from Surat
                     </div>
@@ -51,7 +60,7 @@ const Home = () => {
                             <HiOutlineBarsArrowUp />
                         </button>
                     </div>
-                    <ul className="flex-wrap flex md:justify-end justify-center text-[#7a7a7a] gap-3 text-2xl social-links">
+                    <ul className="flex-wrap flex md:justify-end justify-center text-[#7a7a7a] gap-3 text-2xl social-links" data-aos="fade-up">
                         <SocialLinks />
                     </ul>
                 </div>

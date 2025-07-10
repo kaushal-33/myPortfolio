@@ -1,9 +1,18 @@
-import { Badge } from "flowbite-react"
+import { useEffect } from "react";
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import Title from "../components/Title"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Resume = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,  // animation duration
+            once: true,      // animation only once
+            offset: 120,     // trigger point
+        });
+    }, []);
+
     return (
         <>
             <Header />
@@ -11,10 +20,10 @@ const Resume = () => {
                 <div className='container mx-auto'>
                     <div className='px-4 relative'>
                         <div className="glass p-5">
-                            <h6 className='font-hero uppercase text-xl'>resume</h6>
-                            <h3 className='text-3xl mb-5 capitalize font-secondary'>Know about me</h3>
+                            <h6 className='font-hero uppercase text-xl' data-aos="fade-up">resume</h6>
+                            <h3 className='text-3xl mb-5 capitalize font-secondary' data-aos="fade-down">Know about me</h3>
                             <div className="flex flex-wrap">
-                                <div className="lg:w-6/12">
+                                <div className="lg:w-6/12" data-aos="fade-left">
                                     <div className="font-secondary">
                                         {/* bio */}
                                         <h6 className="text-center capitalize text-2xl font-bold">summary</h6>
@@ -91,8 +100,8 @@ const Resume = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="lg:w-6/12">
-                                    <div className="font-secondary">
+                                <div className="lg:w-6/12" data-aos="fade-right">
+                                    <div className="font-secondary mt-4 lg:mt-0">
                                         <h6 className="text-center capitalize text-2xl font-bold">technical skills</h6>
                                         <div>
                                             <h5 className="text-[#27a776] font-bold ps-4 uppercase">
@@ -137,7 +146,7 @@ const Resume = () => {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <h6 className="text-center capitalize text-2xl font-bold mb-5">work - experience</h6>
+                                        <h6 className="text-center capitalize text-2xl font-bold mb-5">Professional Experience</h6>
                                         <div>
                                             <h5 className="text-[#27a776] font-bold ps-4 uppercase">
                                                 fresher
@@ -188,6 +197,11 @@ const Resume = () => {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="text-center my-7">
+                                <a className="bg-[#27a776] text-white font-secondary font-semibold py-3 px-6 rounded-3xl transition-all hover:bg-white hover:text-black" download="/resume/MyResume.pdf" href="/resume/MyResume.pdf">
+                                    DOWNLOAD CV
+                                </a>
                             </div>
                         </div>
                     </div>
