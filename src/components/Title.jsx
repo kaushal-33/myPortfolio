@@ -1,4 +1,3 @@
-import { HiMiniSlash } from "react-icons/hi2";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 

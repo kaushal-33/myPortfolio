@@ -20,6 +20,15 @@ const Projects = () => {
             tabTitle: "reactJs",
         },
         {
+            image: "projects-images/addToCart.png",
+            title: "Add - to - Cart",
+            subtitle: "This Add to Cart project is a simple and interactive shopping cart made with HTML, CSS, and JavaScript. It lets users browse products, add them to a cart, see the total price, and remove items if needed. It’s a great beginner project that shows how to use JavaScript to make websites more dynamic and user-friendly.",
+            borderColor: "#10B981",
+            gradient: "linear-gradient(180deg, #10B981, #000)",
+            url: "https://kaushal-33.github.io/JavaScript-Projects/Add-to-cart/",
+            tabTitle: "htmlCss",
+        },
+        {
             image: "projects-images/auto-zone.png",
             title: "AutoZone-cars",
             subtitle: "Welcome to AutoZone-cars, where your journey begins with the perfect ride. With years of experience in the car rental industry, we are dedicated to providing you with a seamless and enjoyable travel experience. Our diverse fleet of well-maintained vehicles caters to every need, from compact cars for city adventures to spacious SUVs for family road trips.",
