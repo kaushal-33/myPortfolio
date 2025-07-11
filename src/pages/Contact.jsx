@@ -21,8 +21,8 @@ const Contact = () => {
                         </p>
                         <div className="flex flex-wrap">
                             {/* location */}
-                            <div className="w-4/12">
-                                <div className="flex items-center justify-center gap-3">
+                            <div className="lg:w-4/12 w-full ">
+                                <div className="flex items-center lg:justify-center gap-3 lg:mt-0 mb-4">
                                     <div className="w-[70px] h-[70px] rounded-full text-[#27a776] flex justify-center items-center text-2xl border-[#27a776] border-2">
                                         <FiMapPin />
                                     </div>
@@ -33,8 +33,8 @@ const Contact = () => {
                                 </div>
                             </div>
                             {/* contact */}
-                            <div className="w-4/12">
-                                <div className="flex items-center justify-center gap-3">
+                            <div className="lg:w-4/12 w-full ">
+                                <div className="flex items-center lg:justify-center gap-3 lg:mt-0 mb-4">
                                     <div className="w-[70px] h-[70px] rounded-full text-[#27a776] flex justify-center items-center text-2xl border-[#27a776] border-2">
                                         <MdOutlinePhone />
                                     </div>
@@ -45,8 +45,8 @@ const Contact = () => {
                                 </div>
                             </div>
                             {/* email */}
-                            <div className="w-4/12">
-                                <div className="flex items-center justify-center gap-3">
+                            <div className="lg:w-4/12 w-full ">
+                                <div className="flex items-center lg:justify-center gap-3 lg:mt-0 mb-4">
                                     <div className="w-[70px] h-[70px] rounded-full text-[#27a776] flex justify-center items-center text-2xl border-[#27a776] border-2">
                                         <BsEnvelopeAt />
                                     </div>
@@ -60,16 +60,16 @@ const Contact = () => {
                         <div className="mt-8">
                             <form action="#" className="">
                                 <div className="flex flex-wrap gap-5 justify-center">
-                                    <div className="w-5/12">
+                                    <div className="md:w-5/12 w-full">
                                         <input type="text" placeholder="Name" className="p-3 rounded-md w-full bg-transparent border-[#7a7a7a] border focus:border-[#27a776]" />
                                     </div>
-                                    <div className="w-5/12">
+                                    <div className="md:w-5/12 w-full">
                                         <input type="text" placeholder="Email" className="p-3 rounded-md w-full bg-transparent border-[#7a7a7a] border focus:border-[#27a776]" />
                                     </div>
-                                    <div className="w-10/12">
+                                    <div className="md:w-10/12 w-full">
                                         <input type="text" placeholder="Subject" className="p-3 rounded-md w-full bg-transparent border-[#7a7a7a] border focus:border-[#27a776]" />
                                     </div>
-                                    <div className="w-9/12">
+                                    <div className="md:w-9/12 w-full">
                                         <textarea className="p-3 rounded-md w-full bg-transparent border-[#7a7a7a] border focus:border-[#27a776]" placeholder="Message" rows={5}></textarea>
                                     </div>
                                 </div>
