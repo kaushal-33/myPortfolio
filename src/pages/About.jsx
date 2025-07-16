@@ -40,28 +40,28 @@ const About = () => {
 
   const testimonials = [
     {
-      review: "Shows a high level of skill in front-end and back-end web development.They possess extensive knowledge in HTML, CSS, JavaScript, and multiple frameworks.such as React.js, Angular, and Vue.js. Their comprehension of adaptable designThe principles they follow guarantee that the websites they create are easy to use on all devices.",
+      review: "Kaushal consistently shows a strong grasp of front-end concepts and isn't afraid to experiment. His commitment to learning full stack development is commendable.",
       profileImg: "/testimonials/sir.jpeg",
       name: "anant shah",
-      designation: "Freelancer"
+      designation: "Mentor"
     },
     {
-      review: "Consistently tackles challenges with a problem-solving attitude. They possess showed inventiveness and originality in creating strategies that enhance user experience Gain expertise and optimize procedures. Their skill in troubleshooting and fixing errors.Troubleshooting guarantees that there is little to no disruption in operations and problems are resolved quickly and effectively.",
+      review: "Kaushal consistently approaches challenges with a strong problem-solving mindset. He has shown creativity and originality in building features that improve user experience and optimize workflows. His ability to troubleshoot and fix issues ensures smooth operations with minimal disruption — making him a reliable and effective team member.",
       profileImg: "/testimonials/suraj.jpeg",
       name: "suraj yadav",
-      designation: "web designer"
+      designation: "fellow developer"
     },
     {
-      review: "In team settings, Kaushal is an effective communicator and collaborator. They actively contribute ideas, provide constructive feedback, and work well with cross-functional teams to achieve project goals. Their clear communication style facilitates understanding and alignment among team members, fostering a productive work environment.",
+      review: "Working with Kaushal has been a great experience. He's always eager to learn and quick to pick up new technologies. Whether it was debugging tricky React components or collaborating on responsive UI layouts, he brought creativity and consistency to the table. I truly admire his dedication to becoming a full stack developer.",
       profileImg: "/testimonials/dev.jpeg",
       name: "Divyadarshan Das",
-      designation: "dev-Ops"
+      designation: "fellow developer"
     },
     {
-      review: "Kaushal is skilled in server-side languages such as Node.js and Python on the backend. (Django, Flask), as well as Java. RESTful APIs have been effectively incorporated by them linked with various databases such as MySQL, MongoDB, and PostgreSQL. Their capacity to enhancing database performance and efficaciously handling information leads to significant improvementsthe functioning of online applications.",
+      review: "Kaushal is a great team player — he helped us debug a complex React issue and improved the UI flow of our group project.",
       profileImg: "/testimonials/aryan.jpeg",
       name: "Aryan Patel",
-      designation: "fullstack developer"
+      designation: "fellow developer"
     },
   ]
 
@@ -75,14 +75,10 @@ const About = () => {
               <Title title={'about'} />
             </div>
             <p className='mt-5 md:w-6/12 text-center mx-auto text-lg' data-aos="fade-down">
-              I am a results-oriented Fullstack Developer with 1 years of
-              expertise developing reliable websites. Possessing a solid
-              background in front-end and back-end programming, I thrive at
-              utilizing a broad range of abilities to produce scalable and
-              responsive solutions. My enthusiasm for clear code and
-              problem-solving motivates me to constantly investigate new
-              frameworks and technologies in order to improve user experience and
-              project efficiency.
+              I’M AN ASPIRING FULL-STACK DEVELOPER WITH A FRONTEND FOCUS. I LOVE BUILDING
+              CLEAN, RESPONSIVE INTERFACES USING HTML, CSS, JAVASCRIPT, REACT, TAILWIND, AND
+              REDUX TOOLKIT. WITH A BACKGROUND IN C++, I'M ALSO EXPLORING BACKEND
+              DEVELOPMENT TO BRING FULL PROJECTS TO LIFE. ALWAYS LEARNING, ALWAYS BUILDING.
             </p>
             <div className='mt-7 w-[240px] h-[50px] m-auto' data-aos="flip-up">
               <Button name={'AVAILABLE FOR HIRE'} onClick={() => navigate("/contact")} />
@@ -258,6 +254,7 @@ const About = () => {
             </div>
             <div className="custom-pagination text-center mt-6"></div>
           </div>
+          <p></p>
         </div>
       </section>
       <Footer />
