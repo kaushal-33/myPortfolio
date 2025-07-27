@@ -12,13 +12,23 @@ const Projects = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000,  // animation duration
+            duration: 500,  // animation duration
             once: true,      // animation only once
-            offset: 100,     // trigger point
+            offset: 80,     // trigger point
         });
     }, []);
 
     const projects = [
+        {
+            image: "projects-images/radheshyam.png",
+            title: "TV Service Records Manager",
+            subtitle: "A clean, responsive React + Redux component to manage TV repair records. Features include search, edit/delete actions, delivery confirmation with amount input, and status badges. Built with Tailwind CSS and Lucide icons for a modern UI.",
+            borderColor: "#10B981",
+            gradient: "linear-gradient(180deg, #10B981, #000)",
+            aos: "flip-down",
+            url: "https://radheshyamelectronics-fbu06h9ks-kauhal-varmas-projects.vercel.app/",
+            tabTitle: "reactJs",
+        },
         {
             image: "projects-images/movieaddflix.png",
             title: "MovieAddFlix",
