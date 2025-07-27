@@ -20,6 +20,16 @@ const Projects = () => {
 
     const projects = [
         {
+            image: "projects-images/movieaddflix.png",
+            title: "MovieAddFlix",
+            subtitle: "A react based web application, feature-rich movie collection manager built using Tailwind CSS, MUI, and Tiptap. It supports: json-server (mock-server) to store data.",
+            borderColor: "#10B981",
+            gradient: "linear-gradient(180deg, #10B981, #000)",
+            aos: "flip-down",
+            url: "https://movie-add-flix.vercel.app/",
+            tabTitle: "reactJs",
+        },
+        {
             image: "projects-images/react-EMS.png",
             title: "EMS (Employees Management System)",
             subtitle: "A React-based admin dashboard for managing employees. Features secure admin login with local storage integration, employee data listing, secure routing and responsive UI. *(Id: admin@123gmail.com, password: admin@123)",
