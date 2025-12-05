@@ -229,6 +229,7 @@ const Projects = () => {
                                             >
                                                 <img
                                                     data-aos={item.aos}
+                                                    loading="lazy"
                                                     src={item.image}
                                                     alt={item.title}
                                                     className="rounded-xl w-full h-48 mb-4 border border-white/20 object-cover"

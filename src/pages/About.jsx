@@ -91,7 +91,7 @@ const About = () => {
               <div className='md:w-4/12 lg:order-1 order-2' data-aos="flip-right">
                 <div className='h-full'>
                   <div className='text-center overflow-hidden rounded-lg h-full'>
-                    <img src="/me-2.jpg" alt="My picture" width="100%" className='h-full' />
+                    <img src="/me-2.jpg" alt="My picture" width="100%" className='h-full' loading='lazy'/>
                   </div>
                 </div>
               </div>
