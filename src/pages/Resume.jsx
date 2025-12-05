@@ -114,9 +114,23 @@ const Resume = () => {
                                                     <li className="uppercase">responsive design</li>
                                                     <li className="uppercase">jquery</li>
                                                     <li className="uppercase">bootstrap</li>
-                                                    <li className="uppercase">react js</li>
+                                                    <li className="uppercase">react.js</li>
                                                     <li className="uppercase">tailwind css</li>
                                                     <li className="uppercase">redux toolkit</li>
+                                                    <li className="uppercase">firebase</li>
+                                                    <li className="uppercase">many UI libraries</li>
+                                                </ul>
+                                            </div>
+                                            <h5 className="text-[#27a776] font-bold ps-4 uppercase">
+                                                back-end
+                                            </h5>
+                                            <div className="px-4 border-s border-[#7a7a7a] dot -mt-5 pt-9 pb-4">
+                                                <ul className="list-disc ps-4">
+                                                    <li className="uppercase">node.js</li>
+                                                    <li className="uppercase">express.js</li>
+                                                    <li className="uppercase">ejs</li>
+                                                    <li className="uppercase">mongo db</li>
+                                                    <li className="uppercase">mongoose</li>
                                                 </ul>
                                             </div>
                                             <h5 className="text-[#27a776] font-bold ps-4 uppercase">
@@ -199,7 +213,7 @@ const Resume = () => {
                                 </div>
                             </div>
                             <div className="text-center my-7">
-                                <a className="bg-[#27a776] text-white font-secondary font-semibold py-3 px-6 rounded-3xl transition-all hover:bg-white hover:text-black" download="/resume/MyResume.pdf" href="/resume/MyResume.pdf">
+                                <a className="bg-[#27a776] text-white font-secondary font-semibold py-3 px-6 rounded-3xl transition-all hover:bg-white hover:text-black" href="https://drive.google.com/file/d/1p0ydGwWCO0tiL2plTVQtQO_sOrlLXMwc/view?usp=sharing" target="_blank">
                                     DOWNLOAD CV
                                 </a>
                             </div>

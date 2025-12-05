@@ -12,21 +12,21 @@ const Projects = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 500,  // animation duration
-            once: true,      // animation only once
-            offset: 80,     // trigger point
+            duration: 500,
+            once: true,
+            offset: 80,
         });
     }, []);
 
     const projects = [
         {
-            image: "projects-images/radheshyam.png",
-            title: "TV Service Records Manager",
-            subtitle: "A clean, responsive React + Redux component to manage TV repair records. Features include search, edit/delete actions, delivery confirmation with amount input, and status badges. Built with Tailwind CSS and Lucide icons for a modern UI.",
+            image: "projects-images/lab.png",
+            title: "Relational lab management",
+            subtitle: "Developed a Computer Lab Management System using React, Context API, and Firebase for real-time CRUD operations and authentication. Integrated React Suite UI and React Charts for a responsive dashboard with interactive data visualization.",
             borderColor: "#10B981",
             gradient: "linear-gradient(180deg, #10B981, #000)",
             aos: "flip-down",
-            url: "https://radheshyamelectronics-fbu06h9ks-kauhal-varmas-projects.vercel.app/",
+            url: "computer-lab-management.vercel.app",
             tabTitle: "reactJs",
         },
         {
@@ -132,11 +132,11 @@ const Projects = () => {
         {
             image: "projects-images/react-TODO.png",
             title: "React Todo List",
-            subtitle: "A minimal, responsive todo app built with React. Allows adding, toggling, and removing tasks with clean state management.",
+            subtitle: "Todo with firebase authentication and with multi user.",
             borderColor: "#10B981",
             gradient: "linear-gradient(180deg, #10B981, #000)",
             aos: "flip-down",
-            url: "https://react-todo-list-two-delta.vercel.app/",
+            url: "https://todo-react-gilt-three.vercel.app/",
             tabTitle: "reactJs",
         },
 

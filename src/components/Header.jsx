@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import MobileNavs from './MobileNavs'
 import { useState } from 'react'
@@ -8,11 +8,12 @@ import { SiHackerrank } from 'react-icons/si'
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   return (
     <header className='header relative z-50'>
       <div className='container mx-auto'>
         <div className='flex justify-between items-center pe-4'>
-          <div className='logo'>
+          <div className='logo cursor-pointer' onClick={() => navigate("/")}>
             <img src='/logoSVG.svg' alt='MY LOGO' width={100} />
           </div>
           <ul className='text-[#7a7a7a] capitalize  lg:flex hidden justify-end gap-14 font-semibold nav-link'>

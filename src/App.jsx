@@ -5,11 +5,23 @@ import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
 import Blogs from "./pages/Blogs"
 import Contact from "./pages/Contact"
+import Loader from "./pages/Loader"
+import { useEffect, useState } from "react"
 
 const App = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+        const loadingTime = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+
+        return () => clearTimeout(loadingTime);
+    }, [])
+
     return (
         <div className="bg-black">
             <BrowserRouter>
+                {isLoading && <Loader />}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

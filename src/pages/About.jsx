@@ -36,6 +36,10 @@ const About = () => {
     { logo: "/technologiesLogos/react.png", size: 60 },
     { logo: "/technologiesLogos/vite.png", size: 60 },
     { logo: "/technologiesLogos/redux.png", size: 60 },
+    { logo: "/technologiesLogos/firebase.png", size: 90 },
+    { logo: "/technologiesLogos/express.png", size: 60 },
+    { logo: "/technologiesLogos/node.png", size: 60 },
+    { logo: "/technologiesLogos/mongoDb.png", size: 60 },
   ]
 
   const testimonials = [
@@ -87,7 +91,7 @@ const About = () => {
               <div className='md:w-4/12 lg:order-1 order-2' data-aos="flip-right">
                 <div className='h-full'>
                   <div className='text-center overflow-hidden rounded-lg h-full'>
-                    <img src="/me-2.jpg" alt="My picture" width="100%" className='object-cover h-full' />
+                    <img src="/me-2.jpg" alt="My picture" width="100%" className='h-full' />
                   </div>
                 </div>
               </div>
@@ -122,7 +126,7 @@ const About = () => {
                       <span className="text-[#27a776] text-2xl">
                         <IoIosArrowForward />
                       </span>
-                      Age: 24
+                      Age: 25
                     </li>
                     <li className="flex font-semibold items-center mb-3">
                       <span className="text-[#27a776] text-2xl">
@@ -192,7 +196,7 @@ const About = () => {
               >
                 {skillsLogo.map((obj, idx) => <SwiperSlide key={idx}>
                   <div className='flex justify-center'>
-                    <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0'>
+                    <div className='w-[100px] h-[100px] tech-logo bg-[#27a776] rounded-full flex justify-center items-center grayscale cursor-pointer transition-all hover:grayscale-0 duration-300'>
                       <img src={obj.logo} alt="HTML Logo" width={obj.size} />
                     </div>
                   </div>

@@ -15,9 +15,9 @@ const Home = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000,  // animation duration
-            once: true,      // animation only once
-            offset: 120,     // trigger point
+            duration: 1000,  
+            once: true,      
+            offset: 120, 
         });
     }, []);
 
